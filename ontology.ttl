@@ -1,4 +1,4 @@
-@prefix : <http://disk-project.org/ontology/disk#> .
+@prefix : <https://reginawang99.github.io/DISKOntology/ontology.ttl#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -14,11 +14,10 @@
                                                             terms:license "http://creativecommons.org/licenses/by-nc-sa/2.0/"^^xsd:anyURI ;
                                                             terms:title "The DISK Ontology"@en ;
                                                             dc:creator "Varun Ratnakar" ;
-                                                            vann:preferredNamespaceUri "http://disk-project.org/ontology/disk#"^^xsd:anyURI ;
+                                                            vann:preferredNamespaceUri "https://reginawang99.github.io/DISKOntology/ontology.ttl#"^^xsd:anyURI ;
                                                             vann:preferredNamespacePrefix "disk" ;
                                                             owl:versionInfo "1.0.0" ;
                                                             rdfs:label "DISK Ontology"@en ;
-                                                            terms:created "2016-09-02"^^xsd:dateTime ;
                                                             dc:creator "Daniel Garijo" ;
                                                             terms:abstract "The DISK Ontology aims to represent the components in a Line of Inquiry (e.g., hypothesis, metaworkflows, workflows, etc.), along with their relationships and main interactions. It also aims to represents hypothesis and their revisions. The ontology is aligned to the W3C PROV standard"@en .
 
