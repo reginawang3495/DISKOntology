@@ -1,54 +1,54 @@
-@prefix : <https://reginawang99.github.io/DISKOntology/ontology.n3#> .
+@prefix : <http://disk-project.org/ontology/disk#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://reginawang99.github.io/DISKOntology/ontology.n3> .
+@base <http://disk-project.org/ontology/disk> .
 
-<https://reginawang99.github.io/DISKOntology/ontology.n3> rdf:type owl:Ontology ;
-                                                           <http://purl.org/dc/elements/1.1/creator> "Yolanda Gil" ;
-                                                           <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by-nc-sa/2.0/"^^xsd:anyURI ;
-                                                           <http://purl.org/dc/terms/title> "The DISK Ontology"@en ;
-                                                           <http://purl.org/dc/elements/1.1/creator> "Varun Ratnakar" ;
-                                                           <http://purl.org/vocab/vann/preferredNamespaceUri> "https://reginawang99.github.io/DISKOntology/ontology.n3#"^^xsd:anyURI ;
-                                                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "disk" ;
-                                                           owl:versionInfo "1.0.0" ;
-                                                           rdfs:label "DISK Ontology"@en ;
-                                                           <http://purl.org/dc/terms/created> "2016-09-02"^^xsd:dateTime ;
-                                                           <http://purl.org/dc/elements/1.1/creator> "Daniel Garijo" ;
-                                                           <http://purl.org/dc/terms/abstract> "The DISK Ontology aims to represent the components in a Line of Inquiry (e.g., hypothesis, metaworkflows, workflows, etc.), along with their relationships and main interactions. It also aims to represents hypothesis and their revisions. The ontology is aligned to the W3C PROV standard"@en .
+<http://disk-project.org/ontology/disk> rdf:type owl:Ontology ;
+                                         <http://purl.org/dc/elements/1.1/creator> "Yolanda Gil" ;
+                                         <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by-nc-sa/2.0/"^^xsd:anyURI ;
+                                         <http://purl.org/dc/terms/title> "The DISK Ontology"@en ;
+                                         <http://purl.org/dc/elements/1.1/creator> "Varun Ratnakar" ;
+                                         <http://purl.org/vocab/vann/preferredNamespaceUri> "http://disk-project.org/ontology/disk#"^^xsd:anyURI ;
+                                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "disk" ;
+                                         owl:versionInfo "1.0.0" ;
+                                         rdfs:label "DISK Ontology"@en ;
+                                         <http://purl.org/dc/terms/created> "2016-09-02"^^xsd:dateTime ;
+                                         <http://purl.org/dc/elements/1.1/creator> "Daniel Garijo" ;
+                                         <http://purl.org/dc/terms/abstract> "The DISK Ontology aims to represent the components in a Line of Inquiry (e.g., hypothesis, metaworkflows, workflows, etc.), along with their relationships and main interactions. It also aims to represents hypothesis and their revisions. The ontology is aligned to the W3C PROV standard"@en .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasHypothesisVariable
+###  http://disk-project.org/ontology/disk#hasHypothesisVariable
 :hasHypothesisVariable rdf:type owl:AnnotationProperty ;
                        rdfs:range <http://www.wings-workflows.org/ontology/workflow.owl#Variable> .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasId
+###  http://disk-project.org/ontology/disk#hasId
 :hasId rdf:type owl:AnnotationProperty ;
        rdfs:range xsd:string ;
        rdfs:domain :WorkflowBinding ,
                    owl:Thing .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasRevisedHypothesisVariable
+###  http://disk-project.org/ontology/disk#hasRevisedHypothesisVariable
 :hasRevisedHypothesisVariable rdf:type owl:AnnotationProperty ;
                               rdfs:range <http://www.wings-workflows.org/ontology/workflow.owl#Variable> .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasRunLink
+###  http://disk-project.org/ontology/disk#hasRunLink
 :hasRunLink rdf:type owl:AnnotationProperty ;
             rdfs:domain :WorkflowBinding .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasStatus
+###  http://disk-project.org/ontology/disk#hasStatus
 :hasStatus rdf:type owl:AnnotationProperty ;
            rdfs:range xsd:string ;
-           rdfs:domain _:genid-nodeid-genid-de4fa0c04e9e422d9d371dbab41edd40-2FED763C47C9FE958A32E150619C2DF5 ,
+           rdfs:domain _:genid-nodeid-genid-128b96f3792b42e2bd8aa6ceb23809ba-Agenid10 ,
                        :WorkflowBinding .
 
 
@@ -56,7 +56,7 @@
 #    Object Properties
 #################################################################
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#createdFrom
+###  http://disk-project.org/ontology/disk#createdFrom
 :createdFrom rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasDerivedFrom> ;
              rdfs:domain :Data ;
@@ -64,7 +64,7 @@
              rdfs:label "created from"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasConfidenceReport
+###  http://disk-project.org/ontology/disk#hasConfidenceReport
 :hasConfidenceReport rdf:type owl:ObjectProperty ;
                      rdfs:domain [ rdf:type owl:Class ;
                                    owl:unionOf ( :Hypothesis
@@ -76,7 +76,7 @@
                                 "has confidence report"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasExecution
+###  http://disk-project.org/ontology/disk#hasExecution
 :hasExecution rdf:type owl:ObjectProperty ;
               rdfs:domain :WorkflowBinding ;
               rdfs:range <http://www.wings-workflows.org/ontology/execution.owl#Execution> ;
@@ -84,7 +84,7 @@
               rdfs:label "has execution"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasHypothesis
+###  http://disk-project.org/ontology/disk#hasHypothesis
 :hasHypothesis rdf:type owl:ObjectProperty ;
                rdfs:domain :TriggeredLineOfInquiry ;
                rdfs:range :Hypothesis ;
@@ -92,13 +92,13 @@
                rdfs:label "has hypothesis"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasHypothesisVariable
+###  http://disk-project.org/ontology/disk#hasHypothesisVariable
 :hasHypothesisVariable rdf:type owl:ObjectProperty ;
                        rdfs:domain :MetaWorkflow ,
                                    :WorkflowBinding .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasLineOfInquiry
+###  http://disk-project.org/ontology/disk#hasLineOfInquiry
 :hasLineOfInquiry rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasDerivedFrom> ;
                   rdfs:domain :TriggeredLineOfInquiry ;
@@ -107,7 +107,7 @@
                   rdfs:label "has line of inquiry"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasMetaWorkflowBinding
+###  http://disk-project.org/ontology/disk#hasMetaWorkflowBinding
 :hasMetaWorkflowBinding rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :hasWorkflowBinding ;
                         rdfs:domain [ rdf:type owl:Class ;
@@ -120,7 +120,7 @@
                         rdfs:label "has metaworkflow binding"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasParentHypothesis
+###  http://disk-project.org/ontology/disk#hasParentHypothesis
 :hasParentHypothesis rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasRevisionOf> ;
                      rdfs:domain :Hypothesis ;
@@ -129,7 +129,7 @@
                      rdfs:label "has parent hypothesis"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasResultingHypothesis
+###  http://disk-project.org/ontology/disk#hasResultingHypothesis
 :hasResultingHypothesis rdf:type owl:ObjectProperty ;
                         rdfs:domain :TriggeredLineOfInquiry ;
                         rdfs:range :Hypothesis ;
@@ -137,13 +137,13 @@
                         rdfs:label "has resulting hypothesis"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasRevisedHypothesisVariable
+###  http://disk-project.org/ontology/disk#hasRevisedHypothesisVariable
 :hasRevisedHypothesisVariable rdf:type owl:ObjectProperty ;
                               rdfs:domain :MetaWorkflow ,
                                           :WorkflowBinding .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasTriggeredLineOfInquiry
+###  http://disk-project.org/ontology/disk#hasTriggeredLineOfInquiry
 :hasTriggeredLineOfInquiry rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf <http://www.w3.org/ns/prov#has_provenance> ;
                            rdfs:domain :ConfidenceReport ;
@@ -152,14 +152,14 @@
                            rdfs:label "has triggered line of inquiry"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasTriggeredLineOfInquiryStatus
+###  http://disk-project.org/ontology/disk#hasTriggeredLineOfInquiryStatus
 :hasTriggeredLineOfInquiryStatus rdf:type owl:ObjectProperty ;
                                  rdfs:domain :TriggeredLineOfInquiry ;
                                  rdfs:range :WorkflowBinding ;
                                  rdfs:label "Triggered Line Of Inquiry Status" .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasVariable
+###  http://disk-project.org/ontology/disk#hasVariable
 :hasVariable rdf:type owl:ObjectProperty ;
              rdfs:domain :VariableBinding ;
              rdfs:range <http://www.wings-workflows.org/ontology/workflow.owl#Variable> ;
@@ -167,7 +167,7 @@
              rdfs:label "has variable"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasVariableBinding
+###  http://disk-project.org/ontology/disk#hasVariableBinding
 :hasVariableBinding rdf:type owl:ObjectProperty ;
                     rdfs:domain :WorkflowBinding ;
                     rdfs:range :VariableBinding ;
@@ -175,7 +175,7 @@
                     rdfs:label "has variable binding"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasWorkflow
+###  http://disk-project.org/ontology/disk#hasWorkflow
 :hasWorkflow rdf:type owl:ObjectProperty ;
              rdfs:domain :WorkflowBinding ;
              rdfs:range <http://www.wings-workflows.org/ontology/workflow.owl#Workflow> ;
@@ -183,7 +183,7 @@
              rdfs:label "has workflow"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasWorkflowBinding
+###  http://disk-project.org/ontology/disk#hasWorkflowBinding
 :hasWorkflowBinding rdf:type owl:ObjectProperty ;
                     rdfs:domain [ rdf:type owl:Class ;
                                   owl:unionOf ( :LineOfInquiry
@@ -218,7 +218,7 @@
 #    Data properties
 #################################################################
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasBindingValue
+###  http://disk-project.org/ontology/disk#hasBindingValue
 :hasBindingValue rdf:type owl:DatatypeProperty ;
                  rdfs:domain :VariableBinding ;
                  rdfs:range xsd:string ;
@@ -226,7 +226,7 @@
                  rdfs:label "has binding value"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasConfidenceValue
+###  http://disk-project.org/ontology/disk#hasConfidenceValue
 :hasConfidenceValue rdf:type owl:DatatypeProperty ;
                     rdfs:domain :ConfidenceReport ;
                     rdfs:range xsd:double ;
@@ -234,7 +234,7 @@
                     rdfs:label "has confidence value"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasDataQuery
+###  http://disk-project.org/ontology/disk#hasDataQuery
 :hasDataQuery rdf:type owl:DatatypeProperty ;
               rdfs:domain :LineOfInquiry ;
               rdfs:range xsd:string ;
@@ -242,7 +242,7 @@
               rdfs:label "has data query"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasHypothesisQuery
+###  http://disk-project.org/ontology/disk#hasHypothesisQuery
 :hasHypothesisQuery rdf:type owl:DatatypeProperty ;
                     rdfs:domain :LineOfInquiry ;
                     rdfs:range xsd:string ;
@@ -250,15 +250,15 @@
                     rdfs:label "has hypothesis query"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasId
+###  http://disk-project.org/ontology/disk#hasId
 :hasId rdf:type owl:DatatypeProperty .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasRunLink
+###  http://disk-project.org/ontology/disk#hasRunLink
 :hasRunLink rdf:type owl:DatatypeProperty .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#hasStatus
+###  http://disk-project.org/ontology/disk#hasStatus
 :hasStatus rdf:type owl:DatatypeProperty .
 
 
@@ -266,19 +266,19 @@
 #    Classes
 #################################################################
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#ConfidenceReport
+###  http://disk-project.org/ontology/disk#ConfidenceReport
 :ConfidenceReport rdf:type owl:Class ;
                   rdfs:comment "A confidence report groups the confidence value and the link to the triggered line of inquiry of a given statement or hypothesis"@en ;
                   rdfs:label "Confidence report"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#Data
+###  http://disk-project.org/ontology/disk#Data
 :Data rdf:type owl:Class ;
       rdfs:comment "The results produced as a result of executing a workflow from a given line of inquiry"@en ;
       rdfs:label "Data"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#Hypothesis
+###  http://disk-project.org/ontology/disk#Hypothesis
 :Hypothesis rdf:type owl:Class ;
             rdfs:comment """A hypothesis h consists of: 
 1. A hypothesis statement, which is a set of assertions about entities in the domain.  For example, they express assertions such as “The mutant form of Protein ABCD is associated with colon cancer.”
@@ -288,7 +288,7 @@
             rdfs:label "Hypothesis"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#LineOfInquiry
+###  http://disk-project.org/ontology/disk#LineOfInquiry
 :LineOfInquiry rdf:type owl:Class ;
                rdfs:comment """A line of inquiry represents potential analyses that can be pursued to test a type of hypothesis.  A line of inquiry consists of:
 1. A hypothesis pattern, which represents the type of hypotheses that can be explored with this line of inquiry.  An example of a hypothesis pattern is “Protein ?p is associated with cancer ?c”.  This hypothesis pattern must be expressed in the same language as hypothesis statements, so that they can be matched against a user’s hypothesis.
@@ -301,26 +301,26 @@
                rdfs:label "Line of Inquiry"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#MetaWorkflow
+###  http://disk-project.org/ontology/disk#MetaWorkflow
 :MetaWorkflow rdf:type owl:Class ;
               rdfs:subClassOf <http://www.wings-workflows.org/ontology/workflow.owl#Workflow> ;
               rdfs:comment "A metaworkflow is a special type of workflow which uses as inputs the results of other workflows"@en ;
               rdfs:label "Metaworkflow"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#TriggeredLineOfInquiry
+###  http://disk-project.org/ontology/disk#TriggeredLineOfInquiry
 :TriggeredLineOfInquiry rdf:type owl:Class ;
                         rdfs:comment "A triggered line of inquiry represents a strategy for exploring a hypothesis that is currently being explored by executing its associated workflows and metaworkflows. A triggered line of inquiry may require a long time to complete. When finished, the triggered line of inquiry will include pointers to the provenance of the workflows and metaworkflows that participated on the execution, as well as a confidence value on the original hypothesis."@en ;
                         rdfs:label "Triggered line of inquiry"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#VariableBinding
+###  http://disk-project.org/ontology/disk#VariableBinding
 :VariableBinding rdf:type owl:Class ;
                  rdfs:comment "Contains a Variable and a binding value"@en ;
                  rdfs:label "Variable binding"@en .
 
 
-###  https://reginawang99.github.io/DISKOntology/ontology.n3#WorkflowBinding
+###  http://disk-project.org/ontology/disk#WorkflowBinding
 :WorkflowBinding rdf:type owl:Class ;
                  rdfs:comment "Contains a workflow and a variable binding"@en ;
                  rdfs:label "Workflow binding"@en .
