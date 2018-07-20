@@ -1,4 +1,4 @@
-@prefix : <https://reginawang99.github.io/DISKOntology/ontology.ttl#> .
+@prefix : <http://disk-project.org/ontology/disk#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -50,7 +50,7 @@
 ###  https://reginawang99.github.io/DISKOntology/ontology.ttl#hasStatus
 :hasStatus rdf:type owl:AnnotationProperty ;
            rdfs:range xsd:string ;
-           rdfs:domain _:genid-nodeid-node1cisvc7udx1 ,
+           rdfs:domain _:genid-nodeid-genid-40cd280198584aadad6bf9059889812b-genid-nodeid-node1cisvc7udx1 ,
                        :WorkflowBinding .
 
 
