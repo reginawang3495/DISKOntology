@@ -1,4 +1,4 @@
-@prefix :        <https://reginawang99.github.io/DISKOntology/ontology.ttl#> .
+@prefix :        <http://disk-project.org/ontology/disk##> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix terms:   <http://purl.org/dc/terms/> .
@@ -8,7 +8,7 @@
 @prefix vann:    <http://purl.org/vocab/vann/> .
 @prefix dc:      <http://purl.org/dc/elements/1.1/> .
 
-<https://reginawang99.github.io/DISKOntology/ontology.ttl>
+<http://disk-project.org/ontology/disk#>
       a       owl:Ontology ;
       owl:versionInfo "1.0.0" .
 
